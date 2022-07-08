@@ -20,7 +20,7 @@ some notes:
 - before running script, just one time open the ms-paint and resize the drawing screen to desired size (as big as you can). 
 although resize the windows (maybe maximazed is better) and close the window. This process will be saved in windows and next time
 ms-paint will running in last sizes that you choosed.
-- to stop running, just drang the mouse to top left corner of screen. because of "pyautogui.FAILSAFE = True" in line 37, 
+- to stop running, just drang the mouse to top left corner of screen. because of "pyautogui.FAILSAFE = True" in line 35, 
 if you place your mouse on position 0,0 the process will be terminated. position 0,0 is top left of screen.
 
 
