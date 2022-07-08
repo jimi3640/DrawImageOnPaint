@@ -17,7 +17,7 @@ def set_color(R, G, B):
     except:
 	print('cannot find change color button')
         pyautogui.PAUSE = 0.01
-        return
+        return False
 
     if not pyautogui.click(_location_):
         pyautogui.typewrite('\t\t\t\t\t\t\t')
@@ -29,7 +29,7 @@ def set_color(R, G, B):
         pyautogui.typewrite('\n')
 
     pyautogui.PAUSE = 0.01
-
+    return True
 
 def paint():
     pyautogui.FAILSAFE = True
@@ -74,7 +74,8 @@ def paint():
         if count>0:
             r,g,b = color
             if paper_color != (r,g,b):
-                set_color(r, g, b)
+                if not set_color(r, g, b):
+		    continue
             else:
                 continue
             mask = df.RGB.apply(lambda x: (r, g, b) == x)
