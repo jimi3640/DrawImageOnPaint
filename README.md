@@ -6,9 +6,11 @@ Welcome
 How to use code:
 In the Images folder there is three images:
 1- start_button.png : replace the image with your own start button image. best and easiest way is to use windows Snippin Tool.
+
 2- 1.png : it is the change color bottum in ms-paint. if after the start of script, you saw 'cannot find change color buttom' in console,
  please replace 1.png image with your own image of change color. as note number 1, best and easiest way is windows Snipping Tool.
  remmeber to save it as 1.png or  change the file name in line 16 of script.
+ 
 3- google.png : the image that script tries to draw it in ms-paint. you can change it to any custom image. 
 but remember to keep the name as google.png or change the file name in script (line 55)
 
